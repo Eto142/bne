@@ -1,5 +1,8 @@
 @include('home.header')
 
+<br>
+<br>
+
 <!-- NEWS PAGE -->
 <section class="news-section" style="padding: 60px 20px; background: #0A0A0A; color: #ccc;">
     <div class="container">
