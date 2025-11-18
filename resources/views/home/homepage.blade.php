@@ -25,8 +25,8 @@
                     <h2>Premier Music Production</h2>
                     <p>State-of-the-art studios for exceptional sound.</p>
                     <div class="hero-buttons">
-                        <a href="#services" class="btn">Book a Session</a>
-                        <a href="#gallery" class="btn btn-outline">View Our Work</a>
+                        <a href="{{ url('book-session') }}" class="btn">Book a Session</a>
+                        <a href="{{ url('gallery') }}" class="btn btn-outline">View Our Work</a>
                     </div>
                 </div>
             </div>
@@ -39,8 +39,8 @@
                     <h2>Artist Development & Management</h2>
                     <p>Nurturing talent to reach their full potential.</p>
                     <div class="hero-buttons">
-                        <a href="#artists" class="btn">Meet Our Artists</a>
-                        <a href="#contact" class="btn btn-outline">Join Our Roster</a>
+                        <a href="{{ url('artists') }}" class="btn">Meet Our Artists</a>
+                        <a href="{{ url('contact') }}" class="btn btn-outline">Join Our Roster</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <h2>Our Story</h2>
                     <p>Brainz Nationz Entertainment is a premier record label and music production company dedicated to discovering and nurturing exceptional talent. With a focus on innovation and creativity, we provide a platform for artists to thrive in the competitive music industry.</p>
                     <p>Our team of experienced professionals works closely with each artist to develop their unique sound and brand, ensuring they reach their full potential and make a lasting impact in the music world.</p>
-                    <a href="#contact" class="btn">Get in Touch</a>
+                    <a href="{{ url('contact') }}" class="btn">Get in Touch</a>
                 </div>
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Recording Studio">
