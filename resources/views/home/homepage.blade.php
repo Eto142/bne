@@ -319,7 +319,7 @@
   
 
     <!-- Contact Section -->
-  
+{{--   
      <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
@@ -370,7 +370,7 @@ Link Road, PH.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 

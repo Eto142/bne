@@ -68,6 +68,155 @@
     </div>
 </footer>
 
+<style>
+    /* FOOTER MAIN */
+.bne-footer {
+    background: #111;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px 20px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CONTACT TOP ROW */
+.bne-contact-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.bne-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.bne-contact-item i {
+    color: gold;
+    font-size: 18px;
+}
+
+/* FOOTER GRID */
+.bne-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* COLUMN HEADINGS */
+.bne-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: gold;
+    position: relative;
+}
+
+.bne-column h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: gold;
+    margin-top: 5px;
+}
+
+/* TEXT & LINKS */
+.bne-column p,
+.bne-column a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.bne-column a:hover {
+    color: #fff;
+}
+
+/* SOCIAL ICONS */
+.bne-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.bne-social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.bne-social-icons a:hover {
+    background-color: gold;
+    color: #111;
+    transform: translateY(-5px);
+}
+
+/* NEWSLETTER */
+.bne-newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.bne-newsletter-form .bne-btn {
+    width: 100%;
+    padding: 10px;
+    background: gold;
+    color: #111;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bne-newsletter-form .bne-btn:hover {
+    background: #d6b400;
+}
+
+/* COPYRIGHT */
+.bne-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .bne-contact-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .bne-footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .bne-contact-item {
+        justify-content: center;
+    }
+}
+
+</style>
     <script>
         // Slideshow functionality
         let currentSlide = 0;
