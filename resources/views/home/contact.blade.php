@@ -1,5 +1,7 @@
 
-      <!-- Contact Section -->
+         @include('home.header')
+     
+     <!-- Contact Section -->
       <br>
       <br>
    <section class="contact" id="contact">
@@ -53,3 +55,6 @@ Link Road, PH.</p>
             </div>
         </div>
     </section>
+
+
+    @include('home.footer')
