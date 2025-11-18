@@ -19,6 +19,9 @@ Route::get('/book-session', function () {
     return view('home.book-session');
 });
 
+Route::get('/book-appointment', function () {
+    return view('home.book-appointment');
+});
 
 Route::get('/speak-management', function () {
     return view('home.speak-management');

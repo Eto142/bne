@@ -1,5 +1,6 @@
 @include('home.header')
-
+<br>
+<br>
 <!-- CONTACT SECTION -->
 <section class="contact-section" id="contact">
     <div class="container">
