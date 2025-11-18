@@ -18,7 +18,7 @@
                 </div>
 <div class="instrument-card">
     <div class="instrument-image">
-        <img src="https://images.unsplash.com/photo-1571974599782-87624638275b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZHJ1bXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=80" alt="Drum Set">
+        <img src="{{ asset('assets/images/drum.jpg') }}" alt="Drum Set">
     </div>
     <div class="instrument-info">
         <h3>Drum Set</h3>
@@ -29,7 +29,7 @@
 
 <div class="instrument-card">
     <div class="instrument-image">
-        <img src="https://images.unsplash.com/photo-1580946101530-afad16d4e235?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2V5Ym9hcmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=80" alt="Keyboard">
+        <img src="{{ asset('assets/images/keyboard.jpg') }}" alt="Keyboard">
     </div>
     <div class="instrument-info">
         <h3>Keyboard/Synthesizer</h3>
