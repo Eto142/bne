@@ -198,7 +198,7 @@
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE
 @media (max-width: 768px) {
     .bne-contact-top {
         flex-direction: column;
@@ -214,7 +214,7 @@
     .bne-contact-item {
         justify-content: center;
     }
-}
+} */
 
 </style>
     <script>
