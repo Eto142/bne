@@ -39,11 +39,7 @@
 
                 <p><i class="fas fa-map-marker-alt"></i> No 1 Chiorlu Street off Apara Link Road, Port Harcourt.</p>
 
-                <p>
-                    <i class="fas fa-phone"></i>
-                    08188612964, 07069955185 <br>
-                    07079157782, 08125236711
-                </p>
+                 <p><span>08188612964 | 07069955185 | 07079157782 | 08125236711</span></p>
 
                 <p><i class="fas fa-envelope"></i> management@brainznationz.com</p>
                 <p><i class="fas fa-clock"></i> Available: Mon–Fri: 10AM–6PM</p>
