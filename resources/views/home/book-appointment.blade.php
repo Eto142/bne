@@ -23,7 +23,7 @@
         <!-- Grid Layout -->
         <div class="appointment-grid">
 
-            <!-- Optional Contact Info -->
+            <!-- Management Contact Info -->
             <div class="contact-info">
                 <h3>Contact Management</h3>
 
@@ -63,7 +63,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="topic">Purpose of Appointment</label>
+                        <label for="topic">Reason for Request</label>
                         <select id="topic" name="topic" required>
                             <option value="">Select an option</option>
                             <option value="artist_support">Artist Support / Development</option>
