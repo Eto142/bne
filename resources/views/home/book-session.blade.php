@@ -47,7 +47,10 @@
                     07079157782, 08125236711
                 </p> --}}
 
-                <p><span>08188612964 | 07069955185 | 07079157782 | 08125236711</span></p>
+                 <p>
+                    <i class="fas fa-phone"></i>
+                   <span>08188612964 | 07069955185 | 07079157782 | 08125236711</span>
+                </p>
 
                 <p><i class="fas fa-envelope"></i> info@brainznationz.com</p>
                 <p><i class="fas fa-clock"></i> Studio Hours: Mon–Fri: 9AM–6PM | Sat: 10AM–4PM</p>
