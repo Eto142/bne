@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <!-- Replace with your actual logo -->
                     <div class="logo-img">
                         <img src="logo.png" alt="Brainz Nationz Logo" style="width: 100%; height: 100%; object-fit: cover;">
@@ -29,19 +29,19 @@
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="{{ url('about') }}">About</a></li>
                        <li class="dropdown">
     <a href="#" class="dropbtn">Services ▾</a>
     <div class="dropdown-content">
-        <a href="#book-session">Book a Session</a>
-        <a href="#speak-management">Speak with Management</a>
-        <a href="#registration">Registration</a>
-        <a href="#book-appointment">Book an Appointment</a>
-        <a href="#academy">Academy (Apply to Learn Music)</a>
+        <a href="{{ url('book-session') }}">Book a Session</a>
+        <a href="{{ url('speak-management') }}">Speak with Management</a>
+        <a href="{{ url('registration') }}">Registration</a>
+        <a href="{{ url('book-appointment') }}">Book an Appointment</a>
+        <a href=" {{ url('academy') }}">Academy (Apply to Learn Music)</a>
     </div>
 </li>
-                        <li><a href="#instruments">Rentals</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="{{ url('rentals') }}">Rentals</a></li>
+                        <li><a href="{{ url('gallery') }}">Gallery</a></li>
                         <li><a href="{{ url('artists') }}">Artists</a></li>
                         <li><a href="{{ url('contact') }}">Contact</a></li>
                     </ul>

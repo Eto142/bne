@@ -1,48 +1,222 @@
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Brainz Nationz</h3>
-                    <p>Premier record label and music production company dedicated to discovering and nurturing exceptional talent.</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <p><a href="#home">Home</a></p>
-                    <p><a href="#about">About</a></p>
-                    <p><a href="#services">Services</a></p>
-                    <p><a href="#artists">Artists</a></p>
-                    <p><a href="#contact">Contact</a></p>
-                </div>
-                <div class="footer-column">
-                    <h3>Services</h3>
-                    <p><a href="#book-session">Book a Session</a></p>
-                    <p><a href="#speak-management">Artist Management</a></p>
-                    <p><a href="#academy">Music Academy</a></p>
-                    <p><a href="#instruments">Instrument Rentals</a></p>
-                </div>
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to our newsletter for updates on new releases and events.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit" class="btn">Subscribe</button>
-                    </form>
-                </div>
+<!-- Footer -->
+<footer class="bne-footer">
+    <div class="bne-footer-container">
+
+        <!-- Contact Info Top Row -->
+        <div class="bne-contact-top">
+            <div class="bne-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>No 1 Chiorlu Street, Off Apara Link Road, Port Harcourt</span>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Brainz Nationz Entertainment. All Rights Reserved.</p>
+            <div class="bne-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>08188612964 | 07069955185 | 07079157782 | 08125236711</span>
+            </div>
+            <div class="bne-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>BNE_Official@aol.com | official.bne001@gmail.com</span>
             </div>
         </div>
-    </footer>
 
+        <!-- Footer Columns -->
+        <div class="bne-footer-grid">
+
+            <div class="bne-column about-column">
+                <h3>Brainz Nationz</h3>
+                <p>Premier record label and music production company dedicated to discovering and nurturing exceptional talent.</p>
+                <div class="bne-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="bne-column links-column">
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#artists">Artists</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+
+            <div class="bne-column services-column">
+                <h3>Services</h3>
+                <p><a href="#book-session">Book a Session</a></p>
+                <p><a href="#speak-management">Artist Management</a></p>
+                <p><a href="#academy">Music Academy</a></p>
+                <p><a href="#instruments">Instrument Rentals</a></p>
+            </div>
+
+            <div class="bne-column newsletter-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates on new releases and events.</p>
+                <form class="bne-newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="bne-btn">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="bne-copyright">
+            <p>&copy; 2025 Brainz Nationz Entertainment. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* FOOTER MAIN */
+.bne-footer {
+    background: #111;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 40px 20px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* CONTACT TOP ROW */
+.bne-contact-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.bne-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.bne-contact-item i {
+    color: gold;
+    font-size: 18px;
+}
+
+/* FOOTER GRID */
+.bne-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* COLUMN HEADINGS */
+.bne-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: gold;
+    position: relative;
+}
+
+.bne-column h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: gold;
+    margin-top: 5px;
+}
+
+/* TEXT & LINKS */
+.bne-column p,
+.bne-column a {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.bne-column a:hover {
+    color: #fff;
+}
+
+/* SOCIAL ICONS */
+.bne-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.bne-social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.bne-social-icons a:hover {
+    background-color: gold;
+    color: #111;
+    transform: translateY(-5px);
+}
+
+/* NEWSLETTER */
+.bne-newsletter-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.bne-newsletter-form .bne-btn {
+    width: 100%;
+    padding: 10px;
+    background: gold;
+    color: #111;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bne-newsletter-form .bne-btn:hover {
+    background: #d6b400;
+}
+
+/* COPYRIGHT */
+.bne-copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .bne-contact-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .bne-footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .bne-contact-item {
+        justify-content: center;
+    }
+}
+
+</style>
     <script>
         // Slideshow functionality
         let currentSlide = 0;

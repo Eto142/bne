@@ -1,3 +1,5 @@
+   @include('home.header')
+
 <!-- Gallery Section -->
     <section class="gallery" id="gallery">
         <div class="container">
@@ -42,3 +44,5 @@
             </div>
         </div>
     </section>
+
+    @include('home.footer')
