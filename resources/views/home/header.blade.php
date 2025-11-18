@@ -44,6 +44,7 @@
                         <li><a href="{{ url('gallery') }}">Gallery</a></li>
                         <li><a href="{{ url('artists') }}">Artists</a></li>
                         <li><a href="{{ url('contact') }}">Contact</a></li>
+                         <li><a href="{{ url('news') }}">News</a></li>
                     </ul>
                 </nav>
             </div>

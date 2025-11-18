@@ -27,6 +27,11 @@ Route::get('/speak-management', function () {
     return view('home.speak-management');
 });
 
+Route::get('/news', function () {
+    return view('home.news');
+});
+
+
 
 Route::get('/registration', function () {
     return view('home.registration');
