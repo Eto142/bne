@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\SessionBookingController;
+use App\Http\Controllers\ManagementRequestController;
+use App\Http\Controllers\AcademyApplicationController;
+
 
 Route::get('/', function () {
     return view('home.homepage');
@@ -57,3 +62,15 @@ Route::get('/academy', function () {
 Route::get('/services', function () {
     return view('home.services');
 });
+
+
+
+
+Route::post('/appointments', [AppointmentController::class, 'store'])->name('appointments.store');
+Route::post('/book-session', [SessionBookingController::class, 'store'])
+    ->name('session.book');
+Route::post('/speak-to-management', [ManagementRequestController::class, 'store'])
+    ->name('management.store');
+
+Route::post('/academy/apply', [AcademyApplicationController::class, 'store'])
+    ->name('academy.apply');

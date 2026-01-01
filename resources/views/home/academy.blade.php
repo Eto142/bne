@@ -43,7 +43,9 @@
             <div class="form-container">
                 <h3>Application Form</h3>
 
-                <form id="academyForm">
+          <form id="academyForm" method="POST" action="{{ route('academy.apply') }}">
+    @csrf
+
 
                     <div class="form-group">
                         <label for="name">Full Name</label>

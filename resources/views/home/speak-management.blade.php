@@ -59,8 +59,15 @@
             <!-- Management Form -->
             <div class="form-container" style="flex: 1; min-width: 280px;">
                 <h3 style="margin-bottom: 20px; font-size: 22px;">Management Request Form</h3>
+                                       @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 
-                <form id="managementForm">
+               <form id="managementForm" method="POST" action="{{ route('management.store') }}">
+    @csrf
+
 
                     <div class="form-group">
                         <label for="name">Full Name</label>

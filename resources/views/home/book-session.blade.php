@@ -67,8 +67,15 @@
             <!-- Booking Form -->
             <div class="form-container" style="flex: 1; min-width: 280px;">
                 <h3 style="margin-bottom: 20px; font-size: 22px;">Session Booking Form</h3>
+                             @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 
-                <form id="contactForm">
+
+                <form id="contactForm" method="POST" action="{{ route('session.book') }}">
+    @csrf
 
                     <div class="form-group">
                         <label for="name">Full Name</label>

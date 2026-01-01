@@ -57,7 +57,15 @@
             <div class="form-container" style="flex: 1; min-width: 280px;">
                 <h3 style="margin-bottom: 20px; font-size: 22px;">Appointment Form</h3>
 
-                <form id="appointmentForm">
+                @if(session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+
+               <form id="appointmentForm" method="POST" action="{{ route('appointments.store') }}">
+    @csrf
 
                     <div class="form-group">
                         <label for="name">Full Name</label>
