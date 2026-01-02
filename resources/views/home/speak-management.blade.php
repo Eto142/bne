@@ -59,7 +59,7 @@
             <!-- Management Form -->
             <div class="form-container" style="flex: 1; min-width: 280px;">
                 <h3 style="margin-bottom: 20px; font-size: 22px;">Management Request Form</h3>
-                                       @if(session('success'))
+                            
   @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show shadow-sm d-flex align-items-center" role="alert">
         <i class="bi bi-check-circle-fill me-2"></i>
