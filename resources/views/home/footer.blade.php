@@ -503,5 +503,12 @@
             this.reset();
         });
     </script>
+
+    <script>
+    setTimeout(() => {
+        document.querySelector('.alert')?.classList.remove('show');
+    }, 5000);
+</script>
+
 </body>
 </html>
