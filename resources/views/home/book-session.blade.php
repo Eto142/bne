@@ -77,7 +77,7 @@
 
 
 
-                <form id="contactForm" method="POST" action="{{ route('session.book') }}">
+                <form  method="POST" action="{{ route('session.book') }}">
     @csrf
 
                     <div class="form-group">
