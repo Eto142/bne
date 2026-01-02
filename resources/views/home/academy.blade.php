@@ -42,6 +42,14 @@
             <!-- Academy Application Form -->
             <div class="form-container">
                 <h3>Application Form</h3>
+                                           
+  @if(session('success'))
+    <div class="alert alert-success alert-dismissible fade show shadow-sm d-flex align-items-center" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        <span>{{ session('success') }}</span>
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
 
           <form id="academyForm" method="POST" action="{{ route('academy.apply') }}">
     @csrf
