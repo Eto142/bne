@@ -1,10 +1,12 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AppointmentController;
-use App\Http\Controllers\SessionBookingController;
-use App\Http\Controllers\ManagementRequestController;
 use App\Http\Controllers\AcademyApplicationController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\ManagementRequestController;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\SessionBookingController;
+use Illuminate\Support\Facades\Route;
+
 
 
 Route::get('/', function () {
@@ -74,3 +76,7 @@ Route::post('/speak-to-management', [ManagementRequestController::class, 'store'
 
 Route::post('/academy/apply', [AcademyApplicationController::class, 'store'])
     ->name('academy.apply');
+
+    
+Route::post('/register', [RegistrationController::class, 'store'])
+    ->name('register.store');

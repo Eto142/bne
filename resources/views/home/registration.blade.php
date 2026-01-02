@@ -17,32 +17,36 @@
             Join <strong>Brainz Nationz</strong> today! Fill out the form below to register and become part of our community.
         </p>
 
+        @if(session('success'))
+    <div class="alert alert-success alert-dismissible fade show shadow-sm d-flex align-items-center" role="alert">
+        <i class="bi bi-check-circle-fill me-2"></i>
+        <span>{{ session('success') }}</span>
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
+
         <!-- Registration Form -->
         <div class="form-container">
-            <form id="registrationForm">
+<form id="registrationForm" method="POST" action="{{ route('register.store') }}">
+    @csrf
 
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your full name"
+               value="{{ old('name') }}" required>
+    </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email"
+               value="{{ old('email') }}" required>
+    </div>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter a password" required>
-                </div>
+    <button type="submit" class="btn">Register</button>
+</form>
 
-                <div class="form-group">
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
-                </div>
-
-                <button type="submit" class="btn">Register</button>
-            </form>
         </div>
 
     </div>
