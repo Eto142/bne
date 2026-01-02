@@ -5,81 +5,88 @@
     <title>Appointment Confirmed</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="margin:0; padding:0; background-color:#f4f6f8; font-family: Arial, Helvetica, sans-serif;">
+<body style="margin:0; padding:0; background-color:#eef1f5; font-family: Arial, Helvetica, sans-serif;">
 
-<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#f4f6f8;">
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#eef1f5;">
     <tr>
-        <td align="center" style="padding:30px 15px;">
+        <td align="center" style="padding:40px 15px;">
 
-            <!-- Main Container -->
-            <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#ffffff; border-radius:6px; overflow:hidden;">
+            <!-- Email Container -->
+            <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+                   style="background-color:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 
-                <!-- Header / Logo -->
+                <!-- Header -->
                 <tr>
-                    <td align="center" style="padding:25px;">
-                        <img src="https://yourdomain.com/logo.png"
+                    <td align="center" style="background-color:#0f172a; padding:25px;">
+                        <img src="{{ asset('assets/images/logo.png') }}"
                              alt="Your Company Logo"
-                             width="150"
-                             style="display:block; max-width:150px; height:auto;">
+                             width="140"
+                             style="display:block; max-width:140px; height:auto;">
                     </td>
                 </tr>
 
                 <!-- Body -->
                 <tr>
-                    <td style="padding:0 30px 30px; color:#333333; font-size:15px; line-height:1.6;">
-                        <h2 style="color:#111111; font-size:20px; margin-top:0;">
+                    <td style="padding:35px; color:#334155; font-size:15px; line-height:1.7;">
+
+                        <h1 style="margin:0 0 15px; font-size:22px; color:#0f172a;">
                             Appointment Confirmed
-                        </h2>
+                        </h1>
 
-                        <p>Hello {{ $appointment->name }},</p>
-
-                        <p>
-                            Thank you for booking an appointment with us.
-                            Below are your appointment details for your records:
+                        <p style="margin:0 0 15px;">
+                            Hello <strong>{{ $appointment->name }}</strong>,
                         </p>
 
-                        <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:20px 0;">
+                        <p style="margin:0 0 25px;">
+                            Thank you for booking an appointment with us.
+                            We’ve successfully received your request. Below are the details for your reference:
+                        </p>
+
+                        <!-- Appointment Details Card -->
+                        <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+                               style="background-color:#f8fafc; border:1px solid #e5e7eb; border-radius:6px; padding:20px;">
                             <tr>
-                                <td style="padding:8px 0;"><strong>Email:</strong></td>
-                                <td style="padding:8px 0;">{{ $appointment->email }}</td>
+                                <td style="padding:8px 0; width:140px; color:#475569;"><strong>Email</strong></td>
+                                <td style="padding:8px 0; color:#111827;">{{ $appointment->email }}</td>
                             </tr>
                             <tr>
-                                <td style="padding:8px 0;"><strong>Phone:</strong></td>
-                                <td style="padding:8px 0;">{{ $appointment->phone }}</td>
+                                <td style="padding:8px 0; color:#475569;"><strong>Phone</strong></td>
+                                <td style="padding:8px 0; color:#111827;">{{ $appointment->phone }}</td>
                             </tr>
                             <tr>
-                                <td style="padding:8px 0;"><strong>Purpose:</strong></td>
-                                <td style="padding:8px 0;">
+                                <td style="padding:8px 0; color:#475569;"><strong>Purpose</strong></td>
+                                <td style="padding:8px 0; color:#111827;">
                                     {{ ucfirst(str_replace('_',' ', $appointment->topic)) }}
                                 </td>
                             </tr>
                         </table>
 
-                        <p>
-                            Our team will review your request and get back to you shortly.
+                        <p style="margin:25px 0 0;">
+                            Our team will review your appointment and contact you shortly with the next steps.
                         </p>
 
-                        <p style="margin-bottom:0;">
-                            Best regards,<br>
+                        <p style="margin:25px 0 0;">
+                            Kind regards,<br>
                             <strong>Your Team</strong>
                         </p>
+
                     </td>
                 </tr>
 
                 <!-- Footer -->
                 <tr>
-                    <td style="background-color:#f0f2f5; padding:20px; text-align:center; font-size:12px; color:#666666;">
+                    <td style="background-color:#f1f5f9; padding:25px; text-align:center; font-size:12px; color:#64748b;">
                         <p style="margin:0;">
-                            © {{ date('Y') }} Your Company Name. All rights reserved.
+                            © {{ date('Y') }} Brainz Entertainment. All rights reserved.
                         </p>
-                        <p style="margin:5px 0 0;">
-                            You are receiving this email because you booked an appointment with us.
+                        <p style="margin:6px 0 0;">
+                            This email was sent because you booked an appointment on our website.
                         </p>
                     </td>
                 </tr>
 
             </table>
-            <!-- End Container -->
+            <!-- End Email Container -->
 
         </td>
     </tr>

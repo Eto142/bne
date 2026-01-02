@@ -20,7 +20,11 @@ class AppointmentConfirmation extends Mailable
 
     public function build()
     {
-        return $this->subject('Appointment Confirmation')
-            ->view('emails.appointment-confirmation');
+        return $this
+            ->from('support@brainznationzentertainment.com', 'Brainz Nation Z Entertainment')
+            ->replyTo('support@brainznationzentertainment.com')
+            ->subject('Your Appointment Has Been Confirmed')
+            ->view('emails.appointment-confirmation')
+            ->text('emails.appointment-confirmation-text');
     }
 }
