@@ -6,108 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        /* LIGHT MODE (Fallback / Default for unsupported clients) */
+        /* LIGHT MODE */
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #f3f4f6;
+            margin:0;
+            padding:0;
+            background-color:#f6f6f6;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         .wrapper {
-            background-color: #f3f4f6;
+            background-color:#f6f6f6;
         }
 
         .container {
-            background-color: #ffffff;
-            border-radius: 12px;
+            background-color:#ffffff;
+            border-radius:12px;
         }
 
         .body-text {
-            color: #374151;
-            font-size: 15px;
-            line-height: 1.8;
+            color:#333333;
+            font-size:15px;
+            line-height:1.8;
         }
 
         .heading {
-            color: #111827;
+            color:#111111;
         }
 
         .muted {
-            color: #6b7280;
+            color:#555555;
         }
 
         .card {
-            background-color: #f9fafb;
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
+            background-color:#f9f9f9;
+            border:1px solid #e5e5e5;
+            border-radius:10px;
+        }
+
+        .card-title {
+            color:#D4AF37; /* gold accent */
         }
 
         .footer {
-            background-color: #f9fafb;
-            color: #6b7280;
-            font-size: 12px;
+            background-color:#f9f9f9;
+            color:#777777;
+            font-size:12px;
         }
 
         /* DARK MODE */
         @media (prefers-color-scheme: dark) {
             body {
-                background-color: #0b0b0f !important;
+                background-color:#0b0b0f !important;
             }
 
             .wrapper {
-                background-color: #0b0b0f !important;
+                background-color:#0b0b0f !important;
             }
 
             .container {
-                background-color: #111827 !important;
-                box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+                background-color:#111111 !important;
+                box-shadow:0 15px 40px rgba(0,0,0,0.6);
             }
 
             .body-text {
-                color: #e5e7eb !important;
+                color:#e5e5e5 !important;
             }
 
             .heading {
-                color: #ffffff !important;
+                color:#ffffff !important;
             }
 
             .muted {
-                color: #9ca3af !important;
+                color:#bbbbbb !important;
             }
 
             .card {
-                background-color: #020617 !important;
-                border: 1px solid #27272a !important;
+                background-color:#020617 !important;
+                border:1px solid #333333 !important;
+            }
+
+            .card-title {
+                color:#D4AF37 !important;
             }
 
             .footer {
-                background-color: #020617 !important;
-                color: #9ca3af !important;
+                background-color:#020617 !important;
+                color:#9ca3af !important;
             }
         }
     </style>
 </head>
 
 <body>
-<table width="100%" cellpadding="0" cellspacing="0" role="presentation" class="wrapper">
+<table width="100%" cellpadding="0" cellspacing="0" class="wrapper">
     <tr>
         <td align="center" style="padding:40px 15px;">
 
             <!-- Container -->
-            <table width="600" cellpadding="0" cellspacing="0" role="presentation" class="container">
+            <table width="600" cellpadding="0" cellspacing="0" class="container">
 
                 <!-- Header -->
                 <tr>
-                    <td align="center" style="padding:35px;
-                        background:linear-gradient(135deg,#7c3aed,#ec4899);">
+                    <td align="center" style="padding:35px; background-color:#0b0b0f;">
 
                         <img src="{{ asset('assets/images/logo.png') }}"
                              alt="Brainznation Entertainment"
                              width="150"
                              style="display:block; max-width:150px; height:auto;">
 
-                        <p style="margin:15px 0 0; font-size:12px; letter-spacing:2px; color:#fdf4ff;">
+                        <p style="margin:15px 0 0; font-size:12px; letter-spacing:2px; color:#D4AF37;">
                             RECORDING • PRODUCTION • CREATIVE
                         </p>
                     </td>
@@ -131,22 +138,22 @@
                         </p>
 
                         <!-- Divider -->
-                        <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                        <table width="100%" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td style="border-top:1px solid #e5e7eb; padding:20px 0;"></td>
+                                <td style="border-top:1px solid #ddd; padding:20px 0;"></td>
                             </tr>
                         </table>
 
                         <!-- Session Details -->
-                        <table width="100%" cellpadding="0" cellspacing="0" role="presentation" class="card">
+                        <table width="100%" cellpadding="0" cellspacing="0" class="card">
                             <tr>
                                 <td style="padding:22px;">
 
-                                    <p style="margin:0 0 12px; font-size:13px; letter-spacing:1px; color:#8b5cf6;">
+                                    <p class="card-title" style="margin:0 0 12px; font-size:13px; letter-spacing:1px;">
                                         SESSION DETAILS
                                     </p>
 
-                                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                    <table width="100%" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td style="padding:8px 0; width:140px;" class="muted">
                                                 Session Type
