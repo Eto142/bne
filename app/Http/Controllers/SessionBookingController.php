@@ -26,7 +26,7 @@ class SessionBookingController extends Controller
             ->send(new SessionBookingConfirmation($booking));
 
         // Email support/admin
-        Mail::to('support@yourdomain.com')
+        Mail::to('support@brainznationzentertainment.com')
             ->send(new SessionBookingSupportNotification($booking));
 
         return redirect()->back()

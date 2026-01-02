@@ -26,7 +26,7 @@ class ManagementRequestController extends Controller
             ->send(new ManagementRequestConfirmation($requestData));
 
         // Send notification to management/support
-        Mail::to('management@yourdomain.com')
+        Mail::to('support@brainznationzentertainment.com')
             ->send(new ManagementRequestNotification($requestData));
 
         return redirect()->back()

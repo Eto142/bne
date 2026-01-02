@@ -28,7 +28,7 @@ public function store(Request $request)
         ->send(new AppointmentConfirmation($appointment));
 
     // Send notification to support
-    Mail::to('support@yourdomain.com')
+    Mail::to('support@brainznationzentertainment.com')
         ->send(new AppointmentSupportNotification($appointment));
 
     return redirect()->back()->with('success', 'Appointment booked successfully! A confirmation email has been sent.');

@@ -29,7 +29,7 @@ class AcademyApplicationController extends Controller
             ->send(new AcademyApplicationConfirmation($application));
 
         // Notify academy/admin
-        Mail::to('academy@yourdomain.com')
+        Mail::to('support@brainznationzentertainment.com')
             ->send(new AcademyApplicationNotification($application));
 
         return redirect()->back()
