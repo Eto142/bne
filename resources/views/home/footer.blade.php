@@ -47,6 +47,11 @@
     <a href="https://www.tiktok.com/@official.bne" target="_blank">
         <i class="fab fa-tiktok"></i>
     </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/2348188612964" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </div>
 
             </div>

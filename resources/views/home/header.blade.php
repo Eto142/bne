@@ -51,3 +51,121 @@
             </div>
         </div>
     </header>
+
+
+    <div class="whatsapp-chat-widget">
+
+    <div class="whatsapp-chat-header">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+        <button class="chat-close" onclick="toggleWhatsAppChat()">×</button>
+    </div>
+
+    <div class="whatsapp-chat-body">
+        <p>👋 Hi there!</p>
+        <p>Welcome to <strong>BNE Empire</strong>.</p>
+        <p>How can we help you today?</p>
+    </div>
+
+    <a href="https://wa.me/2348188612964?text=Hello%20BNE%20Empire,%20I%20would%20like%20to%20make%20an%20enquiry."
+       target="_blank"
+       class="whatsapp-chat-btn">
+        Start Chat
+    </a>
+
+</div>
+
+<button class="whatsapp-float-btn" onclick="toggleWhatsAppChat()">
+    <i class="fab fa-whatsapp"></i>
+</button>
+
+
+<style>
+    .whatsapp-float-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-chat-widget {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: none;
+    z-index: 999;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.whatsapp-chat-header {
+    background: #25D366;
+    color: #fff;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-chat-header i {
+    font-size: 22px;
+}
+
+.chat-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.whatsapp-chat-body {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.whatsapp-chat-btn {
+    display: block;
+    background: #25D366;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-chat-btn:hover {
+    background: #1ebe5d;
+}
+
+</style>
+
+
+<script>
+function toggleWhatsAppChat() {
+    const box = document.querySelector('.whatsapp-chat-widget');
+    box.style.display = (box.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
