@@ -27,11 +27,28 @@
                 <h3>Brainz Nationz</h3>
                 <p>Premier record label and music production company dedicated to discovering and nurturing exceptional talent.</p>
                 <div class="bne-social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+    <!-- Facebook (link not available yet) -->
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/official.bne001" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- Twitter / X (link not available yet) -->
+    <a href="#"><i class="fab fa-twitter"></i></a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@Official-BNE" target="_blank">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@official.bne" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+
             </div>
 
             <div class="bne-column links-column">

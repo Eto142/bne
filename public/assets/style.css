@@ -874,5 +874,26 @@
                 max-width: 250px;
                 margin: 0 auto;
             }
+
+            .social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.social-icons a {
+    color: #111;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:nth-child(1):hover { color: #000; }      /* TikTok */
+.social-icons a:nth-child(2):hover { color: #ff0000; }   /* YouTube */
+.social-icons a:nth-child(3):hover { color: #e1306c; }   /* Instagram */
+
             
         }
