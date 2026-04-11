@@ -87,6 +87,11 @@
         <div class="bne-copyright">
             <p>&copy; 2025 Brainz Nationz Entertainment. All Rights Reserved.</p>
         </div>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; gap: 0.75rem; justify-content: center; font-size: 0.7rem; font-weight: 800; color: rgba(255,255,255,0.25); text-transform: uppercase; letter-spacing: 0.2em;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--tml-gold); opacity: 0.6;"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+            <span>Project by <span style="color: rgba(255,255,255,0.5); border-bottom: 1px solid rgba(200,153,58,0.3); padding-bottom: 2px;">Mesaved Enterprise Limited</span></span>
+        </div>
     </div>
 </footer>
 
