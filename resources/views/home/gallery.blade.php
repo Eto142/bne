@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="{{ asset('assets/images/set2.jpg') }}" alt="Live Performance">
+                    <img src="{{ asset('assets/images/set5.jpg') }}" alt="Live Performance">
                     <div class="gallery-overlay">
                         <h3>Live Performances</h3>
                     </div>
